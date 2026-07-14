@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Obsidian context configuration",
+  "description": "Copy to .agents/obsidian-context.json and customize per project.",
+  "vault": {
+    "name": "Cloud",
+    "path": null
+  },
+  "projectSlug": "my-project",
+  "basePath": "Projects/my-project",
+  "sessionLogsPath": null,
+  "notes": {
+    "vault.name": "Exact name from: obsidian vaults verbose",
+    "vault.path": "Optional absolute path; used to verify vault.name",
+    "basePath": "Root folder inside vault for this project's notes",
+    "sessionLogsPath": "Optional override for session logs (e.g. Logs). Default: {basePath}/logs"
+  }
+}
