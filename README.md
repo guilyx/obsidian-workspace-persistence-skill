@@ -73,9 +73,11 @@ See [PLAN.md](PLAN.md) for architecture and [vault-layout reference](.cursor/ski
 
 | Branch | Role |
 |--------|------|
-| `master` | Bootstrap |
-| `main` | Integration — **open PRs here** |
+| `main` | Default / production — releases are tagged here |
+| `develop` | Integration — **open PRs here** |
 | `cursor/*` | Feature work |
+
+Releases use [semantic versioning](https://semver.org/) tags on `main` (e.g. `v0.1.0`).
 
 ## License
 

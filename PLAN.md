@@ -92,9 +92,9 @@ Always pass `vault="Name"` when multiple vaults exist. Quote values with spaces.
 
 ## Git Workflow
 
-- `master` — initial bootstrap branch
-- `main` — integration branch (created from `master`)
-- Feature branches → PRs target **`main`**, not `master`
+- `main` — default / production branch; releases tagged here (e.g. `v0.1.0`)
+- `develop` — integration branch; feature PRs target **`develop`**
+- `cursor/*` — short-lived feature branches
 
 ## Out of Scope (v1)
 
@@ -108,4 +108,4 @@ Always pass `vault="Name"` when multiple vaults exist. Quote values with spaces.
 - [ ] Agent can discover vault via CLI without hardcoded paths
 - [ ] Templates and references are loadable on demand
 - [ ] Example config and README enable zero-to-working setup
-- [ ] PR merges to `main`
+- [x] PR merges to `develop`, then `develop` merges to `main` for release
